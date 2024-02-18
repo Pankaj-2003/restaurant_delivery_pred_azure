@@ -1,7 +1,11 @@
+import os
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
 from flask import Flask, request, render_template, jsonify
-from pipelines.prediction_pipeline import CustomData, PredictPipeline
+from src.pipelines.prediction_pipeline import CustomData, PredictPipeline
 
-from logger import logging
+from src.logger import logging
 
 
 application = Flask(__name__)

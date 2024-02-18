@@ -19,8 +19,8 @@ def get_requirements(file_path:str)->List[str]:
 setup(
     name='RestoDelPredict',
     version='0.0.1',
-    author='Darshita',
-    author_email='dppaghadal@gmail.com',
+    author='Pankaj',
+    author_email='pankajtiwaribs@gmail.com',
     install_requires=get_requirements('requirements.txt'),
     packages=find_packages()
 )

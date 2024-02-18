@@ -1,12 +1,14 @@
 import os
 import sys
-from src.logger import logging
-from src.exception import CustomException
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from logger import logging
+from exception import CustomException
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
-from src.components.data_transformation import DataTransformation
+from components.data_transformation import DataTransformation
 
 # Inititalize the Data Ingestion Configuration...
 

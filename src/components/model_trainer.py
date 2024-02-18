@@ -1,12 +1,16 @@
 # Basic Import
 import numpy as np
+import os
+import sys
 import pandas as pd
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
-from src.exception import CustomException
-from src.logger import logging
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+from exception import CustomException
+from logger import logging
 
-from src.utils import save_object
-from src.utils import evaluate_model
+from utils import save_object
+from utils import evaluate_model
 
 from dataclasses import dataclass
 import sys

@@ -1,6 +1,7 @@
 import sys
 from dataclasses import dataclass
-
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
 import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer
@@ -8,10 +9,10 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 
-from src.exception import CustomException
-from src.logger import logging
+from exception import CustomException
+from logger import logging
 import os
-from src.utils import save_object
+from utils import save_object
 
 
 @dataclass

@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
-from src.exception import CustomException
-from src.logger import logging
+from exception import CustomException
+from logger import logging
 
 # u can code here - read db, common functions
 

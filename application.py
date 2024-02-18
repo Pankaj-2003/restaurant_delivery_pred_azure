@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, jsonify
-from src.pipelines.prediction_pipeline import CustomData, PredictPipeline
+from pipelines.prediction_pipeline import CustomData, PredictPipeline
 
-from src.logger import logging
+from logger import logging
 
 
 application = Flask(__name__)

@@ -13,3 +13,9 @@ conda activate restoenv/
 ```
 pip install -r requirements.txt
 ```
+
+
+### Deployment
+```
+i deployed this on azure using github actions
+```
